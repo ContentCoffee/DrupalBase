@@ -38,6 +38,19 @@ echo ""
 echo "web/sites/default/settings.local.php"
 echo ""
 
+# Get the starter theme
+mkdir web/themes/custom
+curl https://codeload.github.com/ContentCoffee/D8ProjectTheme/zip/master > file.zip
+bsdtar -xf file.zip -s'|[^/]*/||'
+mv D8ProjectTheme-master web/themes/custom/project
+rm file.zip
+
+# Get the starter module
+mkdir web/modules/custom
+curl https://codeload.github.com/ContentCoffee/D8ProjectModule/zip/master > file.zip
+bsdtar -xf file.zip -s'|[^/]*/||'
+mv D8ProjectModule-master web/modules/custom/project
+rm file.zip
 
 # Get rid of yourself.
 rm start.sh
