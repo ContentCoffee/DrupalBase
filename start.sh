@@ -6,4 +6,7 @@ rm -rf DrupalBase-master
 rm file.zip
 composer install
 rm start.sh
+ln -s web public
+mkdir config
+mkdir config/sync
 
