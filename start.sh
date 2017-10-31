@@ -1,12 +1,44 @@
 #!/bin/sh
 
-curl -sS https://codeload.github.com/ContentCoffee/DrupalBase/zip/master > file.zip 
+# Get the repo
+curl -sS https://codeload.github.com/ContentCoffee/DrupalBase/zip/master > file.zip
+
+# Unzip it nicely
 bsdtar -xf file.zip -s'|[^/]*/||'
+
+# Clean up
 rm -rf DrupalBase-master
 rm file.zip
+
+# Composer
 composer install
-rm start.sh
+
+# Make a link to public Apache/Nginx
 ln -s web public
+
+# Make a config sync dir
 mkdir config
 mkdir config/sync
 
+# Remove the default files
+rm web/sites/example.settings.local.php
+rm web/sites/default/default.services.yml
+rm web/sites/example.sites.php
+rm web/sites/default/default.settings.php
+rm web/sites/default/default.services.yml
+
+# Move the Content and Coffee Defaults
+mv web/sites/default/cc_default.services.yml web/sites/default/services.yml
+mv web/sites/default/cc_default_settings.php web/sites/default/settings.php
+mv web/sites/default/cc_settings.local.php web/sites/default/settings.local.php
+
+
+# Send out some help.
+echo "Almost done, now you need to put your database details into:"
+echo ""
+echo "web/sites/default/settings.local.php"
+echo ""
+
+
+# Get rid of yourself.
+rm start.sh
