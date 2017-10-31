@@ -31,13 +31,6 @@ mv web/sites/default/cc_default.services.yml web/sites/default/services.yml
 mv web/sites/default/cc_default_settings.php web/sites/default/settings.php
 mv web/sites/default/cc_settings.local.php web/sites/default/settings.local.php
 
-
-# Send out some help.
-echo "Almost done, now you need to put your database details into:"
-echo ""
-echo "web/sites/default/settings.local.php"
-echo ""
-
 # Get the starter theme
 mkdir web/themes/custom
 curl https://codeload.github.com/ContentCoffee/D8ProjectTheme/zip/master > file.zip
@@ -51,6 +44,12 @@ curl https://codeload.github.com/ContentCoffee/D8ProjectModule/zip/master > file
 unzip file.zip
 mv D8ProjectModule-master web/modules/custom/project
 rm file.zip
+
+# Send out some help.
+echo "Almost done, now you need to put your database details into:"
+echo ""
+echo "web/sites/default/settings.local.php"
+echo ""
 
 # Get rid of yourself.
 rm start.sh
