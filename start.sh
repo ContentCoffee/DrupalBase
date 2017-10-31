@@ -30,6 +30,7 @@ rm web/sites/default/default.settings.php
 mv web/sites/default/cc_default.services.yml web/sites/default/services.yml
 mv web/sites/default/cc_default_settings.php web/sites/default/settings.php
 mv web/sites/default/cc_settings.local.php web/sites/default/settings.local.php
+chmod 0666 web/sites/default/settings.php
 
 # Get the starter theme
 mkdir web/themes/custom
