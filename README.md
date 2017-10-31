@@ -6,18 +6,10 @@ Ideally this should have been replaced or updated.
 
 ## What to do with this?
 
-Download this repo as a zip
+Run the start script.
 
 ```
-https://github.com/ContentCoffee/DrupalBase/archive/master.zip
+curl https://raw.githubusercontent.com/ContentCoffee/DrupalBase/master/start.sh | sh
 ```
 
-Unzip it to your already made git/project/folder whatever.
-
-Then Run
-
-```
-composer install
-```
-
-Then edit this file and replace the content with information about your project.
+This will download the repo, unzip it to your current directory, then run composer install.
