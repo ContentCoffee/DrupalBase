@@ -25,7 +25,6 @@ rm web/sites/example.settings.local.php
 rm web/sites/default/default.services.yml
 rm web/sites/example.sites.php
 rm web/sites/default/default.settings.php
-rm web/sites/default/default.services.yml
 
 # Move the Content and Coffee Defaults
 mv web/sites/default/cc_default.services.yml web/sites/default/services.yml
