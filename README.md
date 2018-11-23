@@ -40,6 +40,6 @@ cd web
 drush si
 ```
 
-At this point you now have a vanilla drupal. 
+At this point you now have a vanilla drupal. The drupal public will be the ^web/^ folder. Don't be a moron and make a virtualhost point to the main repo dir. 
 
 Have Fun!
