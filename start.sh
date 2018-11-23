@@ -14,7 +14,7 @@ rm file.zip
 composer install
 
 # Make a link to public Apache/Nginx
-ln -s web public
+# ln -s web public
 
 # Make a config sync dir
 mkdir config
