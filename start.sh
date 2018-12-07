@@ -30,7 +30,7 @@ chmod 0644 web/sites/default/settings.php
 mkdir web/themes/custom
 curl https://codeload.github.com/ContentCoffee/D8ProjectTheme/zip/master > file.zip
 unzip file.zip
-mv D8ProjectTheme-master web/themes/custom/project
+mv D8ProjectTheme-master web/themes/custom/projectx
 rm file.zip
 
 # Get the starter module
