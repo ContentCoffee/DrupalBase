@@ -14,23 +14,17 @@ rm file.zip
 composer install
 
 # Make a link to public Apache/Nginx
-ln -s web public
+# ln -s web public
 
 # Make a config sync dir
 mkdir config
 mkdir config/sync
 
-# Remove the default files
-rm web/sites/example.settings.local.php
-rm web/sites/default/default.services.yml
-rm web/sites/example.sites.php
-rm web/sites/default/default.settings.php
-
 # Move the Content and Coffee Defaults
 mv web/sites/default/cc_default.services.yml web/sites/default/services.yml
 mv web/sites/default/cc_default_settings.php web/sites/default/settings.php
 mv web/sites/default/cc_settings.local.php web/sites/default/settings.local.php
-chmod 0666 web/sites/default/settings.php
+chmod 0644 web/sites/default/settings.php
 
 # Get the starter theme
 mkdir web/themes/custom
