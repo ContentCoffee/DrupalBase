@@ -17,7 +17,6 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "contentcoffee/backendtheme": "^1.1",
         "contentcoffee/content": "^1.0",
         "contentcoffee/settings": "^1.0",
         "contentcoffee/singles": "^1.1",
