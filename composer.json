@@ -17,8 +17,8 @@
     ],
     "require": {
         "composer/installers": "^1.2",
-        "contentcoffee/content": "dev-master",
         "contentcoffee/cc_jwt": "dev-master",
+        "contentcoffee/content": "dev-master",
         "contentcoffee/settings": "dev-master",
         "contentcoffee/singles": "dev-master",
         "cweagans/composer-patches": "^1.6",
