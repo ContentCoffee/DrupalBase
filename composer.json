@@ -37,6 +37,7 @@
         "drupal/field_group": "^1.0@RC",
         "drupal/hook_event_dispatcher": "^1.8",
         "drupal/jsonapi": "^1.23",
+        "drupal/jsonapi_extras": "^2.10",
         "drupal/jwt": "^1.0@alpha",
         "drupal/key": "^1.7",
         "drupal/kint": "^1.2",
